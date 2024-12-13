@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <title>TABLAS</title>
+          <meta charset="UTF-8">
+          <link rel="shortcut icon" href="../../img/profile.png">
+ 
+          <link rel="stylesheet" href="../../css/bootstrap.css">
+          <link rel="stylesheet" href="../../css/style.css">
+          <style>
+              .tablaa{
+                  width: 360px;
+                  height: 150px;
+                  border-collapse: none;
+                  margin: auto;
+                  padding-left: 60;
+              }
+              td{
+                  text-align: center;
+              }
+              h1{
+                  text-align: center;
+              }
+          </style>
+      </head>
+
+      <body>
+          <div class="container fondoo">
+              <form>
+                  <h1>Tablas de multiplicar</h1>
+                  <hr>
+                  <table border="1" class="table table-striped tablaa">
+                      <tr><!--Fila 1-->
+                          <td><b>Inicio</b></td>
+                          <td><select id="cbInicio"></select></td>
+                      </tr>
+                      <tr><!--Fila 2-->
+                        <td><b>Fin</b></td>
+                        <td><select id="cbFin"></select></td>
+                      </tr>
+                      <tr><!--Fila 3-->
+                        <td><b>Tabla</b></td>
+                        <td><select id="cbTab"></select></td>
+                      </tr>
+                      <tr><!--Fila 4-->
+                        <td><input id="btVer" type="button" value="RESULTADO" class="btn btn-primary"></td>
+                        <td><input id="btVer2" type="button" value="RESULTADO 2" class="btn btn-primary"></td>
+                        <td><input id="btVer3" type="button" value="RESULTADO 3" class="btn btn-primary"></td>
+                      </tr>
+
+                  </table>
+              </form>
+              <p id="resultado">
+
+              </p>
+          </div>
+          <script src="../../js/tabla.js"></script>
+      </body>
+</html>

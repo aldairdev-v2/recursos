@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesregistro.css">
+    <link rel="shortcut icon" href="img/hogar.png">
+    <title>Registrarme</title>
+</head>
+<body> 
+    <form action="bd/view/alta_user.php" method="post">
+        <section class="form-register">
+            <h3>Formulario registro</h3>
+            <input required class="controls" type="text" name="nombre" placeholder="Nombre">
+            <input required class="controls" type="text" name="Apellido Paterno" placeholder="Apellido Paterno">
+            <input required class="controls" type="text" name="Apellido Materno" placeholder="Apellido Materno">
+            <p>Fecha de nacimiento:</p>
+            <input required class="controls" type="date" name="fecha" placeholder="Fecha de nacimiento">
+            <input required class="controls" type="email" name="Correo Electronico" placeholder="Correo electronico">
+            <input required class="controls" type="tel" name="Numero" placeholder="Numero telefonico">
+            <input required class="controls" type="password" name="Contraseña" placeholder="Contraseña">
+            <input class="botons" type="submit" value="Registrarme" style="cursor: pointer;">
+            <p><a href="bd/vista/login.php">¿Ya tengo una cuenta?</a></p>
+        </section>
+    </form>
+</body>
+</html>

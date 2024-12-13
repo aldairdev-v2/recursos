@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <title>FACTURA</title>
+          <meta charset="UTF-8">
+          <link rel="shortcut icon" href="../../img/profile.png">
+ 
+          <link rel="stylesheet" href="../../css/bootstrap.css">
+          <link rel="stylesheet" href="../../css/style.css">
+
+          <style>
+              .table_fact{
+                  width: 600px;
+                  height: 360;
+                  border-collapse: collapse;
+                  margin: auto;
+                  padding-left: 60;
+              }
+              hr{
+                  border-top: 5px solid black;
+              }
+              td{
+                  text-align: center;
+              }
+              h1{
+                  text-align: center;
+              }
+              .table_cont{
+                  width: 700px;
+                  height: 600;
+                  border-collapse: collapse;
+                  margin: auto;
+                  padding-left: 60;
+              }
+              .bot{
+                  border: 2px solid black;
+              }
+          </style>
+       </head>
+
+       <body class="body">
+           <div class="container fondo_factura">
+               <form>
+                   <h1>😈🥶🍻MICHELADAS "PYTHONAYAN"🍻🥶😈</h1>
+                   <hr>
+                   <table border="1" class="table table-striped table_fact">
+                       <tr><!--Fila 1-->
+                           <td class="table-primary"><input onkeypress="return onlyLetras(event)" autofocus id="txCliente" class="form-control" type="text" placeholder="Cliente"></td>
+                           <td class="table-primary"><input class="form-control" id="txArt" type="text" placeholder="Artículo"></td>
+                           <td class="table-primary"><input onkeypress="return onlyNumero(event)" id="txPrecioun" class="form-control" type="text" placeholder="Precio uni"></td>
+                           <td class="table-primary"><input onkeypress="return onlyNumero(event)" id="txCant" class="form-control" type="text" placeholder="Cant art"></td>
+                          
+                       </tr>
+                       <tr><!--Fila 2-->
+                           <td></td>
+                           <td><input id="btAceptar" type="button" class="btn bot" onmouseover="this.style.background='green'"
+                            onmouseout="this.style.background='white'" value="📋"></td>
+                           <td><input id="btLimpiar" type="button" class="btn bot" onmouseover="this.style.background='red'"
+                            onmouseout="this.style.background='white'" value="🗑"></td>
+                       </tr>
+                   </table>
+                   <hr>
+                   <table id="TbContenido" border="1" class="table table-bordered table-striped table_cont">
+                   <thead>
+                       <tr><!--Fila 1-->
+                           <th class="table-primary">Cliente</th>
+                           <td id="nombre" class="table-primary"colspan="3" style="text-align: left;" ></td>
+                           
+
+                       </tr>
+                       <tr><!--Fila 2-->
+                           <td><b>Artículo</b></td>
+                           <td><b>Cantidad</b></td>
+                           <td><b>PU</b></td>
+                           <td><b>PT</b></td>
+                       </tr>
+                       </thead>
+                       
+                       <tbody> 
+
+                       </tbody>
+                       
+                       <tfoot>
+                       <tr><!--Fila 4-->
+                           <th style="text-align: right;" colspan="3"><b>SUBTOTAL</b></th>
+                      
+
+                           <td id="cSubt" ><input type="hidden" id="sTotal"></td>
+                        
+                       </tr>
+                       <tr><!--Fila 5-->
+                           <th class="table-primary" style="text-align: right;" colspan="3"><b>IVA 15%</b></th>
+                        
+
+                           <td id="cIVA" class="table-primary"></td>
+                       </tr>
+                       <tr><!--Fila 6-->
+                           <th style="text-align: right;" colspan="3"><b>TOTAL</b></th>
+                        
+
+                           <td id="cTotal" ></td>
+                       </tr>
+                       </tfoot>
+                   </table>
+                   <hr>
+               </form>
+           </div>
+           <script src="../../js/factura.js"></script>
+       </body>
+
+</html>

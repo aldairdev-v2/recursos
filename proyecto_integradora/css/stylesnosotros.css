@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  /** Reset para REMS - 62.6% = 10px de 16px **/
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    line-height: 2;
+    background-image: url(../img/pexels-tembela-bohle-963715.jpg);
+    background-size: cover;
+}
+
+/** Globales **/
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+/** = 1200px **/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+/** Utilidades **/
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/** Nosotros **/
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 3rem 0;
+}

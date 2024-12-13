@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/stylesindex.css">
+    <link rel="shortcut icon" href="../../img/hogar.png">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <form method='post' action='../model/usuario_clDAO.php'>
+    <div class="bodya"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <div>BIENES<span>RAICES</span></div>
+    </div>
+    <br>
+    <div class="login">
+        <input type="text" placeholder="Email" name="user"><br>
+        <input type="password" placeholder="Contraseña" name="password"><br>
+        <input type="submit" value="Iniciar sesión">
+        
+    </div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+.body{
+    background: paleturquoise;
+}
+.fondo{
+    background: mintcream;
+  
+}
+
+.fondoo{
+    background: azure;
+    margin-top: 15px;
+    border: 2px solid black;
+    height: 700px;
+}
+
+.form{
+    background: oldlace;
+}
+
+.fondo_factura{
+    background: white;
+    margin-top: 15px;
+    border: 2px solid silver;
+    height: 700px;
+}
+
+.fondo_n{
+    background-color: black;
+}
+.fondo_nomina{
+    background: white;
+    margin-top: 15px;
+    border: 7px solid silver;
+    height: 700px;
+}
+
+.table_prod{
+    width: 400px;
+    height: 360;
+    border-collapse: collapse;
+    margin: auto;
+    padding-left: 60;
+}
+

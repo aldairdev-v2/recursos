@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <title>NÓMINA</title>
+          <meta charset="UTF-8">
+          <link rel="shortcut icon" href="../../img/profile.png">
+ 
+          <link rel="stylesheet" href="../../css/bootstrap.css">
+          <link rel="stylesheet" href="../../css/style.css">
+
+          <style>
+              .tabla_dat{
+                  width: 500px;
+                  height: 360;
+                  border-collapse: collapse;
+                  margin: auto;
+                  padding-left: 60;
+              }
+              .tabla_nom{
+                  width: 850px;
+                  height: 400;
+                  border-collapse: collapse;
+                  margin: auto;
+                  padding-left: 60;
+              }
+              h1{
+                  text-align: center;
+              }
+              hr{
+                  border-top: 7px solid black;
+              }
+              .bot{
+                  border: 2px solid black;
+              }
+          </style>
+      </head>
+
+      <body class="fondo_n">
+          <div class="container fondo_nomina">
+              <hr>
+              <h1>👷‍♂️SISTEMA DE NÓMINA👷‍♂️</h1>
+              <hr>
+              <!--TABLA DATOS-->
+              <table border="1" class="table tabla_dat">
+                  <tr><!--Fila 1-->
+                      
+                      <th style="text-align: center; "colspan="4"><b>Ingrese datos:</b></th>
+                      
+                  </tr>
+                  <tr><!--Fila 2-->
+                    <td><input onkeypress="return valtexto(event)" autofocus type="text" class="form-control" id="txNombre" placeholder="NOMBRE"></td>
+                    <td><input onkeypress="return valnumeros(event)" type="text" class="form-control" id="txSueldo" placeholder="SUELDO MENS"></td>
+                    <td><input onkeypress="return valnumeros(event)" type="text" class="form-control" id="txAntig" placeholder="AÑOS ANTIGüEDAD"></td>
+                  </tr>
+                  <tr><!--Fila 3-->
+                    <td></td>
+                    <td><input type="button" class="btn bot" onmouseover="this.style.background='green'"
+                        onmouseout="this.style.background='white'" id="btAceptar" value="✔️"></td>
+                    <td><input type="button" class="btn bot" onmouseover="this.style.background='red'"
+                        onmouseout="this.style.background='white'" id="btEliminar" value="❌"></td>
+                  </tr>
+              </table>
+              <hr>
+
+              <!--TABLA NÓMINA-->
+              <table border="1" class="table table-bordered tabla_nom">
+                  <thead>
+                  <tr><!--Fila 1-->
+                   
+                      <th style="text-align: center;" colspan="4"><b>NÓMINA QUINCENAL</b></th>
+                  
+
+                  </tr>
+                  <tr><!--Fila 2-->
+                    <td><b>NOMBRE</b></td>
+                    <td><b>SDO. BRUTO</b></td>
+                    <td><b>IMPUESTO</b></td>
+                    <td><b>SDO. NETO</b></td>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <!--
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  -->
+                  </tbody>
+                  <tfoot>
+                  <tr><!--Fila 4-->
+                    <td><b>TOTAL</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  </tfoot>
+              </table>
+
+          </div>
+          <script src="../../js/nomina.js"></script>
+      </body>
+</html>
